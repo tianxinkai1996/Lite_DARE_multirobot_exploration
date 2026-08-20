@@ -1,0 +1,59 @@
+{
+  "episode": 37,
+  "team_size": 4,
+  "communication_mode": "compressed",
+  "scenario_id": "map_0037_trial_03_robots_04_seed_3703082_mapcomm_compressed",
+  "trial": 3,
+  "ablation_profile": {
+    "key": "map_only",
+    "method_name": "LiteDARE-MapOnly",
+    "coordination_mode": "ghost",
+    "enable_map_merging": true,
+    "enable_initial_direction": false,
+    "enable_dynamic_regions": false
+  },
+  "base_seed": 3703082,
+  "selected_start_seed": 3703082,
+  "sampling_attempts": 1,
+  "minimum_required_separation": 12.0,
+  "minimum_actual_separation": 34.40930106817051,
+  "clearance_radius_cells": 0,
+  "world_positions": [
+    [
+      20.0,
+      8.0
+    ],
+    [
+      -8.0,
+      -28.0
+    ],
+    [
+      20.0,
+      -48.0
+    ],
+    [
+      -32.0,
+      0.0
+    ]
+  ],
+  "grid_cells": [
+    [
+      210,
+      170
+    ],
+    [
+      140,
+      80
+    ],
+    [
+      210,
+      30
+    ],
+    [
+      80,
+      150
+    ]
+  ],
+  "all_distinct": true,
+  "all_ground_truth_free": true
+}

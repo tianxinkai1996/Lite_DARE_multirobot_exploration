@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-08-11T16:43:27+0000",
+  "stage": "downstream",
+  "models": [
+    "DARE-L6",
+    "LiteDARE-L4",
+    "LiteDARE-L2"
+  ],
+  "base_random_seed": 42,
+  "maps": "all",
+  "map_count": 100,
+  "runs_per_map": 4,
+  "map_repeats": null,
+  "team_sizes": "2,4,6,8",
+  "parallel_workers": 3,
+  "episode_workers": 4,
+  "experiment_profile": "fast_exploration",
+  "selection_rule": "closest LiteDARE model to L6 by paired success/final-coverage/AUC distance",
+  "selection_scales": {
+    "success": 0.02,
+    "final_coverage": 0.01,
+    "coverage_auc": 0.02
+  },
+  "selection_tie_tolerance": 0.05
+}

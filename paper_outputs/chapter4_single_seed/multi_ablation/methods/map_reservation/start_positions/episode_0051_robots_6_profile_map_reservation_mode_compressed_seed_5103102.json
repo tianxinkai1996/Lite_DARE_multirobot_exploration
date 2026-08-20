@@ -1,0 +1,75 @@
+{
+  "episode": 51,
+  "team_size": 6,
+  "communication_mode": "compressed",
+  "scenario_id": "map_0051_trial_03_robots_06_seed_5103102_mapcomm_compressed",
+  "trial": 3,
+  "ablation_profile": {
+    "key": "map_reservation",
+    "method_name": "LiteDARE-Map-Reservation",
+    "coordination_mode": "collision",
+    "enable_map_merging": true,
+    "enable_initial_direction": false,
+    "enable_dynamic_regions": false
+  },
+  "base_seed": 5103102,
+  "selected_start_seed": 5103102,
+  "sampling_attempts": 1,
+  "minimum_required_separation": 12.0,
+  "minimum_actual_separation": 12.649110640673518,
+  "clearance_radius_cells": 0,
+  "world_positions": [
+    [
+      -20.0,
+      -28.0
+    ],
+    [
+      -4.0,
+      -48.0
+    ],
+    [
+      20.0,
+      -8.0
+    ],
+    [
+      -8.0,
+      8.0
+    ],
+    [
+      16.0,
+      4.0
+    ],
+    [
+      -32.0,
+      -8.0
+    ]
+  ],
+  "grid_cells": [
+    [
+      110,
+      93
+    ],
+    [
+      150,
+      43
+    ],
+    [
+      210,
+      143
+    ],
+    [
+      140,
+      183
+    ],
+    [
+      200,
+      173
+    ],
+    [
+      80,
+      143
+    ]
+  ],
+  "all_distinct": true,
+  "all_ground_truth_free": true
+}

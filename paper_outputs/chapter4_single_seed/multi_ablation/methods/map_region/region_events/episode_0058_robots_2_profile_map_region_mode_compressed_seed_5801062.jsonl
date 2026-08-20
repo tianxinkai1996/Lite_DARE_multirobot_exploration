@@ -1,0 +1,251 @@
+{"event": "lease_assigned", "step": 0, "robot_id": 0, "region_id": "region_20_32_16_31_23_34", "frontier_count": 36, "target_world": [-37.599998474121094, -8.399999618530273], "generation": 0}
+{"event": "lease_assigned", "step": 0, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "frontier_count": 46, "target_world": [8.0, -40.0], "generation": 0}
+{"event": "lease_progress", "step": 0, "robot_id": 0, "region_id": "region_20_32_16_31_23_34", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 0, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 1, "robot_id": 0, "region_id": "region_20_32_16_31_23_34", "reason": "known_cells_increased", "value": 1126}
+{"event": "lease_progress", "step": 1, "robot_id": 0, "region_id": "region_20_32_16_31_23_34", "reason": "new_graph_node", "value": "(-44.0, -8.0)"}
+{"event": "lease_progress", "step": 1, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "reason": "known_cells_increased", "value": 566}
+{"event": "lease_progress", "step": 1, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "reason": "new_graph_node", "value": "(0.0, -44.0)"}
+{"event": "lease_released", "step": 1, "robot_id": 0, "region_id": "region_20_32_16_31_23_34", "reason": "completed"}
+{"event": "lease_progress", "step": 1, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "reason": "frontier_reduced", "value": 22}
+{"event": "lease_assigned", "step": 1, "robot_id": 0, "region_id": "region_25_30_19_27_28_34", "frontier_count": 62, "target_world": [-30.399999618530273, -14.399999618530273], "generation": 1}
+{"event": "lease_progress", "step": 1, "robot_id": 0, "region_id": "region_25_30_19_27_28_34", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 2, "robot_id": 0, "region_id": "region_25_30_19_27_28_34", "reason": "known_cells_increased", "value": 1399}
+{"event": "lease_progress", "step": 2, "robot_id": 0, "region_id": "region_25_30_19_27_28_34", "reason": "new_graph_node", "value": "(-36.0, -8.0)"}
+{"event": "lease_progress", "step": 2, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "reason": "known_cells_increased", "value": 957}
+{"event": "lease_progress", "step": 2, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "reason": "new_graph_node", "value": "(8.0, -40.0)"}
+{"event": "lease_released", "step": 2, "robot_id": 0, "region_id": "region_25_30_19_27_28_34", "reason": "completed"}
+{"event": "lease_released", "step": 2, "robot_id": 1, "region_id": "region_48_13_44_10_51_15", "reason": "completed"}
+{"event": "lease_assigned", "step": 2, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "frontier_count": 55, "target_world": [-28.399999618530273, 2.799999952316284], "generation": 2}
+{"event": "lease_assigned", "step": 2, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "frontier_count": 38, "target_world": [12.399999618530273, -24.0], "generation": 1}
+{"event": "lease_progress", "step": 2, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 2, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 3, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "reason": "known_cells_increased", "value": 685}
+{"event": "lease_progress", "step": 3, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "reason": "new_graph_node", "value": "(-32.0, -8.0)"}
+{"event": "lease_progress", "step": 3, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "known_cells_increased", "value": 562}
+{"event": "lease_progress", "step": 3, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "new_graph_node", "value": "(12.0, -32.0)"}
+{"event": "lease_progress", "step": 3, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "reason": "frontier_reduced", "value": 8}
+{"event": "lease_progress", "step": 3, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "frontier_reduced", "value": 26}
+{"event": "lease_progress", "step": 3, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "graph_distance_decreased", "value": 10.601126159491539}
+{"event": "lease_progress", "step": 4, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "reason": "known_cells_increased", "value": 1039}
+{"event": "lease_progress", "step": 4, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "reason": "new_graph_node", "value": "(-32.0, 0.0)"}
+{"event": "lease_progress", "step": 4, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "known_cells_increased", "value": 1546}
+{"event": "lease_progress", "step": 4, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "new_graph_node", "value": "(12.0, -24.0)"}
+{"event": "lease_released", "step": 4, "robot_id": 0, "region_id": "region_26_39_22_34_29_42", "reason": "completed"}
+{"event": "lease_released", "step": 4, "robot_id": 1, "region_id": "region_52_22_50_19_54_24", "reason": "completed"}
+{"event": "lease_assigned", "step": 4, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "frontier_count": 38, "target_world": [-36.400001525878906, 16.0], "generation": 3}
+{"event": "lease_assigned", "step": 4, "robot_id": 1, "region_id": "region_39_24_38_22_40_28", "frontier_count": 31, "target_world": [-7.199999809265137, -20.799999237060547], "generation": 2}
+{"event": "lease_progress", "step": 4, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 4, "robot_id": 1, "region_id": "region_39_24_38_22_40_28", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 5, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "known_cells_increased", "value": 429}
+{"event": "lease_progress", "step": 5, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "new_graph_node", "value": "(-36.0, 8.0)"}
+{"event": "lease_progress", "step": 5, "robot_id": 1, "region_id": "region_39_24_38_22_40_28", "reason": "known_cells_increased", "value": 664}
+{"event": "lease_progress", "step": 5, "robot_id": 1, "region_id": "region_39_24_38_22_40_28", "reason": "new_graph_node", "value": "(4.0, -20.0)"}
+{"event": "lease_progress", "step": 5, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "frontier_reduced", "value": 35}
+{"event": "lease_released", "step": 5, "robot_id": 1, "region_id": "region_39_24_38_22_40_28", "reason": "completed"}
+{"event": "lease_assigned", "step": 5, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "frontier_count": 16, "target_world": [12.399999618530273, -4.400000095367432], "generation": 3}
+{"event": "lease_progress", "step": 5, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "graph_distance_decreased", "value": 10.601126159491539}
+{"event": "lease_progress", "step": 5, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 6, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "known_cells_increased", "value": 816}
+{"event": "lease_progress", "step": 6, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "new_graph_node", "value": "(-36.0, 16.0)"}
+{"event": "lease_released", "step": 6, "robot_id": 0, "region_id": "region_20_47_18_44_22_49", "reason": "completed"}
+{"event": "lease_assigned", "step": 6, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "frontier_count": 28, "target_world": [-47.20000076293945, 5.599999904632568], "generation": 4}
+{"event": "lease_progress", "step": 6, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 6, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "graph_distance_decreased", "value": 7.313708498984759}
+{"event": "lease_progress", "step": 7, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "known_cells_increased", "value": 292}
+{"event": "lease_progress", "step": 7, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "new_graph_node", "value": "(12.0, -16.0)"}
+{"event": "lease_progress", "step": 7, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "frontier_reduced", "value": 13}
+{"event": "lease_progress", "step": 7, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 7, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "graph_distance_decreased", "value": 4.0}
+{"event": "lease_progress", "step": 8, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "known_cells_increased", "value": 453}
+{"event": "lease_progress", "step": 8, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "new_graph_node", "value": "(12.0, -8.0)"}
+{"event": "lease_released", "step": 8, "robot_id": 1, "region_id": "region_51_35_50_34_53_35", "reason": "completed"}
+{"event": "lease_assigned", "step": 8, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "frontier_count": 53, "target_world": [18.399999618530273, 6.800000190734863], "generation": 4}
+{"event": "lease_progress", "step": 8, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "graph_distance_decreased", "value": 8.944271909999163}
+{"event": "lease_progress", "step": 8, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 9, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "known_cells_increased", "value": 575}
+{"event": "lease_progress", "step": 9, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "new_graph_node", "value": "(12.0, 0.0)"}
+{"event": "lease_progress", "step": 9, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "frontier_reduced", "value": 50}
+{"event": "lease_progress", "step": 9, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "graph_distance_decreased", "value": 5.65685424949238}
+{"event": "lease_progress", "step": 9, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "graph_distance_decreased", "value": 4.944271909999159}
+{"event": "lease_progress", "step": 10, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "known_cells_increased", "value": 2}
+{"event": "lease_progress", "step": 10, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "new_graph_node", "value": "(-40.0, -8.0)"}
+{"event": "lease_progress", "step": 10, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "known_cells_increased", "value": 905}
+{"event": "lease_progress", "step": 10, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "new_graph_node", "value": "(12.0, 8.0)"}
+{"event": "lease_released", "step": 10, "robot_id": 1, "region_id": "region_53_42_50_37_56_45", "reason": "completed"}
+{"event": "lease_assigned", "step": 10, "robot_id": 1, "region_id": "region_41_40_38_38_46_44", "frontier_count": 56, "target_world": [-2.799999952316284, 1.600000023841858], "generation": 5}
+{"event": "lease_progress", "step": 10, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 10, "robot_id": 1, "region_id": "region_41_40_38_38_46_44", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 11, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "known_cells_increased", "value": 237}
+{"event": "lease_progress", "step": 11, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "new_graph_node", "value": "(-48.0, -4.0)"}
+{"event": "lease_progress", "step": 11, "robot_id": 1, "region_id": "region_41_40_38_38_46_44", "reason": "known_cells_increased", "value": 1674}
+{"event": "lease_progress", "step": 11, "robot_id": 1, "region_id": "region_41_40_38_38_46_44", "reason": "new_graph_node", "value": "(4.0, 8.0)"}
+{"event": "lease_progress", "step": 11, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "frontier_reduced", "value": 25}
+{"event": "lease_released", "step": 11, "robot_id": 1, "region_id": "region_41_40_38_38_46_44", "reason": "completed"}
+{"event": "lease_assigned", "step": 11, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "frontier_count": 42, "target_world": [19.600000381469727, 21.200000762939453], "generation": 6}
+{"event": "lease_progress", "step": 11, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "graph_distance_decreased", "value": 4.944271909999159}
+{"event": "lease_progress", "step": 11, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 12, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "known_cells_increased", "value": 151}
+{"event": "lease_progress", "step": 12, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "new_graph_node", "value": "(-48.0, 4.0)"}
+{"event": "lease_released", "step": 12, "robot_id": 0, "region_id": "region_14_38_12_34_15_41", "reason": "completed"}
+{"event": "lease_assigned", "step": 12, "robot_id": 0, "region_id": "region_11_47_10_47_13_47", "frontier_count": 16, "target_world": [-50.0, 13.199999809265137], "generation": 5}
+{"event": "lease_progress", "step": 12, "robot_id": 0, "region_id": "region_11_47_10_47_13_47", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 12, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "graph_distance_decreased", "value": 7.2874176605067795}
+{"event": "lease_progress", "step": 13, "robot_id": 0, "region_id": "region_11_47_10_47_13_47", "reason": "known_cells_increased", "value": 29}
+{"event": "lease_progress", "step": 13, "robot_id": 0, "region_id": "region_11_47_10_47_13_47", "reason": "new_graph_node", "value": "(-52.0, 12.0)"}
+{"event": "lease_progress", "step": 13, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "known_cells_increased", "value": 394}
+{"event": "lease_progress", "step": 13, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "new_graph_node", "value": "(20.0, 16.0)"}
+{"event": "lease_progress", "step": 13, "robot_id": 0, "region_id": "region_14_47_13_47_14_47", "reason": "frontier_reduced", "value": 11}
+{"event": "lease_progress", "step": 13, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "frontier_reduced", "value": 14}
+{"event": "lease_progress", "step": 13, "robot_id": 0, "region_id": "region_14_47_13_47_14_47", "reason": "graph_distance_decreased", "value": 0.9442719099991592}
+{"event": "lease_progress", "step": 13, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "graph_distance_decreased", "value": 6.601126159491539}
+{"event": "lease_progress", "step": 14, "robot_id": 0, "region_id": "region_14_47_13_47_14_47", "reason": "known_cells_increased", "value": 18}
+{"event": "lease_progress", "step": 14, "robot_id": 0, "region_id": "region_14_47_13_47_14_47", "reason": "new_graph_node", "value": "(-48.0, 20.0)"}
+{"event": "lease_progress", "step": 14, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "known_cells_increased", "value": 249}
+{"event": "lease_progress", "step": 14, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "new_graph_node", "value": "(20.0, 24.0)"}
+{"event": "lease_released", "step": 14, "robot_id": 0, "region_id": "region_14_47_13_47_14_47", "reason": "completed"}
+{"event": "lease_released", "step": 14, "robot_id": 1, "region_id": "region_54_48_53_47_56_49", "reason": "completed"}
+{"event": "lease_assigned", "step": 14, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "frontier_count": 16, "target_world": [-16.799999237060547, -17.200000762939453], "generation": 6}
+{"event": "lease_assigned", "step": 14, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "frontier_count": 35, "target_world": [-10.0, -6.0], "generation": 7}
+{"event": "lease_progress", "step": 14, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 14, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 15, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "new_graph_node", "value": "(-40.0, 16.0)"}
+{"event": "lease_progress", "step": 15, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "new_graph_node", "value": "(16.0, 16.0)"}
+{"event": "lease_progress", "step": 15, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "graph_distance_decreased", "value": 8.94427190999916}
+{"event": "lease_progress", "step": 15, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "graph_distance_decreased", "value": 8.94427190999916}
+{"event": "lease_progress", "step": 16, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "new_graph_node", "value": "(-36.0, 12.0)"}
+{"event": "lease_progress", "step": 16, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "new_graph_node", "value": "(16.0, 8.0)"}
+{"event": "lease_progress", "step": 16, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "graph_distance_decreased", "value": 5.656854249492383}
+{"event": "lease_progress", "step": 16, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "graph_distance_decreased", "value": 4.944271909999159}
+{"event": "lease_progress", "step": 17, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "known_cells_increased", "value": 2}
+{"event": "lease_progress", "step": 17, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "new_graph_node", "value": "(-32.0, 4.0)"}
+{"event": "lease_progress", "step": 17, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "known_cells_increased", "value": 3}
+{"event": "lease_progress", "step": 17, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "new_graph_node", "value": "(8.0, 8.0)"}
+{"event": "lease_progress", "step": 17, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "graph_distance_decreased", "value": 8.94427190999916}
+{"event": "lease_progress", "step": 17, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 18, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "known_cells_increased", "value": 13}
+{"event": "lease_progress", "step": 18, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "new_graph_node", "value": "(-32.0, -4.0)"}
+{"event": "lease_progress", "step": 18, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "known_cells_increased", "value": 332}
+{"event": "lease_progress", "step": 18, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "new_graph_node", "value": "(0.0, 0.0)"}
+{"event": "lease_released", "step": 18, "robot_id": 1, "region_id": "region_37_34_34_31_41_38", "reason": "completed"}
+{"event": "lease_assigned", "step": 18, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "frontier_count": 14, "target_world": [-15.600000381469727, -18.0], "generation": 8}
+{"event": "lease_progress", "step": 18, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 18, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 19, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "known_cells_increased", "value": 83}
+{"event": "lease_progress", "step": 19, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "new_graph_node", "value": "(-24.0, -12.0)"}
+{"event": "lease_progress", "step": 19, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "graph_distance_decreased", "value": 5.6568542494923815}
+{"event": "lease_progress", "step": 19, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "graph_distance_decreased", "value": 11.313708498984766}
+{"event": "lease_progress", "step": 20, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "known_cells_increased", "value": 740}
+{"event": "lease_progress", "step": 20, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "new_graph_node", "value": "(-16.0, -20.0)"}
+{"event": "lease_progress", "step": 20, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "new_graph_node", "value": "(12.0, 4.0)"}
+{"event": "lease_progress", "step": 20, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "graph_distance_decreased", "value": 7.313708498984761}
+{"event": "lease_progress", "step": 20, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "graph_distance_decreased", "value": 5.656854249492383}
+{"event": "lease_progress", "step": 21, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "known_cells_increased", "value": 608}
+{"event": "lease_progress", "step": 21, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "new_graph_node", "value": "(-12.0, -20.0)"}
+{"event": "lease_progress", "step": 21, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "new_graph_node", "value": "(12.0, -4.0)"}
+{"event": "lease_released", "step": 21, "robot_id": 0, "region_id": "region_31_26_30_25_32_28", "reason": "completed"}
+{"event": "lease_assigned", "step": 21, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "frontier_count": 17, "target_world": [7.599999904632568, -22.399999618530273], "generation": 7}
+{"event": "lease_progress", "step": 21, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 21, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 22, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "known_cells_increased", "value": 293}
+{"event": "lease_progress", "step": 22, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "new_graph_node", "value": "(-4.0, -24.0)"}
+{"event": "lease_progress", "step": 22, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "new_graph_node", "value": "(12.0, -12.0)"}
+{"event": "lease_progress", "step": 22, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "frontier_reduced", "value": 13}
+{"event": "lease_progress", "step": 22, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "graph_distance_decreased", "value": 4.944271909999159}
+{"event": "lease_progress", "step": 22, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 23, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "known_cells_increased", "value": 378}
+{"event": "lease_progress", "step": 23, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "new_graph_node", "value": "(4.0, -24.0)"}
+{"event": "lease_progress", "step": 23, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "new_graph_node", "value": "(12.0, -20.0)"}
+{"event": "lease_released", "step": 23, "robot_id": 0, "region_id": "region_48_24_47_22_48_25", "reason": "completed"}
+{"event": "lease_released", "step": 23, "robot_id": 1, "region_id": "region_34_26_34_25_34_28", "reason": "completed"}
+{"event": "lease_assigned", "step": 23, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "frontier_count": 20, "target_world": [-22.799999237060547, -42.79999923706055], "generation": 9}
+{"event": "lease_assigned", "step": 23, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "frontier_count": 17, "target_world": [-22.0, 13.199999809265137], "generation": 8}
+{"event": "lease_progress", "step": 23, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 23, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 24, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-4.0, -16.0)"}
+{"event": "lease_progress", "step": 24, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "new_graph_node", "value": "(12.0, -28.0)"}
+{"event": "lease_progress", "step": 24, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 9.888543819998318}
+{"event": "lease_progress", "step": 24, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 25, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-12.0, -16.0)"}
+{"event": "lease_progress", "step": 25, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "known_cells_increased", "value": 3}
+{"event": "lease_progress", "step": 25, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "new_graph_node", "value": "(8.0, -36.0)"}
+{"event": "lease_progress", "step": 25, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 25, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "graph_distance_decreased", "value": 8.94427190999916}
+{"event": "lease_progress", "step": 26, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-20.0, -16.0)"}
+{"event": "lease_progress", "step": 26, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "new_graph_node", "value": "(4.0, -44.0)"}
+{"event": "lease_progress", "step": 26, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 26, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "graph_distance_decreased", "value": 8.94427190999916}
+{"event": "lease_progress", "step": 27, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-28.0, -8.0)"}
+{"event": "lease_progress", "step": 27, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "known_cells_increased", "value": 37}
+{"event": "lease_progress", "step": 27, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "new_graph_node", "value": "(-4.0, -44.0)"}
+{"event": "lease_progress", "step": 27, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "frontier_reduced", "value": 2}
+{"event": "lease_progress", "step": 27, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 11.313708498984763}
+{"event": "lease_progress", "step": 27, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 28, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "known_cells_increased", "value": 261}
+{"event": "lease_progress", "step": 28, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "new_graph_node", "value": "(-12.0, -44.0)"}
+{"event": "lease_progress", "step": 28, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "frontier_reduced", "value": 13}
+{"event": "lease_progress", "step": 28, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 5.65685424949238}
+{"event": "lease_progress", "step": 28, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "graph_distance_decreased", "value": 4.0}
+{"event": "lease_progress", "step": 29, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "known_cells_increased", "value": 64}
+{"event": "lease_progress", "step": 29, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-28.0, 4.0)"}
+{"event": "lease_progress", "step": 29, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "known_cells_increased", "value": 274}
+{"event": "lease_progress", "step": 29, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "new_graph_node", "value": "(-20.0, -44.0)"}
+{"event": "lease_released", "step": 29, "robot_id": 1, "region_id": "region_29_11_29_10_31_12", "reason": "completed"}
+{"event": "lease_assigned", "step": 29, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "frontier_count": 54, "target_world": [-34.0, -46.79999923706055], "generation": 10}
+{"event": "lease_progress", "step": 29, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 5.65685424949238}
+{"event": "lease_progress", "step": 29, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 30, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "known_cells_increased", "value": 646}
+{"event": "lease_progress", "step": 30, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-20.0, 12.0)"}
+{"event": "lease_progress", "step": 30, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "reason": "known_cells_increased", "value": 1016}
+{"event": "lease_progress", "step": 30, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "reason": "new_graph_node", "value": "(-28.0, -44.0)"}
+{"event": "lease_progress", "step": 30, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "frontier_reduced", "value": 20}
+{"event": "lease_progress", "step": 30, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "reason": "frontier_reduced", "value": 18}
+{"event": "lease_progress", "step": 30, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 6.601126159491539}
+{"event": "lease_progress", "step": 31, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "known_cells_increased", "value": 299}
+{"event": "lease_progress", "step": 31, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-20.0, 20.0)"}
+{"event": "lease_progress", "step": 31, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "reason": "known_cells_increased", "value": 921}
+{"event": "lease_progress", "step": 31, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "reason": "new_graph_node", "value": "(-36.0, -48.0)"}
+{"event": "lease_progress", "step": 31, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "frontier_reduced", "value": 2}
+{"event": "lease_released", "step": 31, "robot_id": 1, "region_id": "region_22_9_18_8_28_9", "reason": "completed"}
+{"event": "lease_assigned", "step": 31, "robot_id": 1, "region_id": "region_12_11_8_6_18_15", "frontier_count": 68, "target_world": [-54.400001525878906, -41.599998474121094], "generation": 11}
+{"event": "lease_progress", "step": 31, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 31, "robot_id": 1, "region_id": "region_12_11_8_6_18_15", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 32, "robot_id": 1, "region_id": "region_12_11_8_6_18_15", "reason": "known_cells_increased", "value": 1102}
+{"event": "lease_progress", "step": 32, "robot_id": 1, "region_id": "region_12_11_8_6_18_15", "reason": "new_graph_node", "value": "(-44.0, -44.0)"}
+{"event": "lease_released", "step": 32, "robot_id": 1, "region_id": "region_12_11_8_6_18_15", "reason": "completed"}
+{"event": "lease_assigned", "step": 32, "robot_id": 1, "region_id": "region_23_17_22_13_25_20", "frontier_count": 31, "target_world": [-32.0, -33.20000076293945], "generation": 12}
+{"event": "lease_progress", "step": 32, "robot_id": 1, "region_id": "region_23_17_22_13_25_20", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 33, "robot_id": 1, "region_id": "region_23_17_22_13_25_20", "reason": "graph_distance_decreased", "value": 8.94427190999916}
+{"event": "lease_progress", "step": 34, "robot_id": 1, "region_id": "region_23_17_22_13_25_20", "reason": "known_cells_increased", "value": 351}
+{"event": "lease_progress", "step": 34, "robot_id": 1, "region_id": "region_23_17_22_13_25_20", "reason": "new_graph_node", "value": "(-32.0, -44.0)"}
+{"event": "lease_released", "step": 34, "robot_id": 1, "region_id": "region_23_17_22_13_25_20", "reason": "completed"}
+{"event": "lease_assigned", "step": 34, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "frontier_count": 25, "target_world": [-28.0, -30.0], "generation": 13}
+{"event": "lease_progress", "step": 34, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 35, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "known_cells_increased", "value": 210}
+{"event": "lease_progress", "step": 35, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "new_graph_node", "value": "(-32.0, -36.0)"}
+{"event": "lease_progress", "step": 35, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "frontier_reduced", "value": 14}
+{"event": "lease_progress", "step": 35, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "graph_distance_decreased", "value": 11.28741766050678}
+{"event": "lease_progress", "step": 36, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "known_cells_increased", "value": 45}
+{"event": "lease_progress", "step": 36, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "new_graph_node", "value": "(-32.0, -32.0)"}
+{"event": "lease_released", "step": 36, "robot_id": 1, "region_id": "region_26_19_25_16_26_22", "reason": "completed"}
+{"event": "lease_assigned", "step": 36, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "frontier_count": 27, "target_world": [-52.79999923706055, -30.399999618530273], "generation": 14}
+{"event": "lease_progress", "step": 36, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 37, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "new_graph_node", "value": "(-32.0, -40.0)"}
+{"event": "lease_progress", "step": 37, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "graph_distance_decreased", "value": 8.0}
+{"event": "lease_progress", "step": 38, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "new_graph_node", "value": "(-32.0, -48.0)"}
+{"event": "lease_progress", "step": 38, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "graph_distance_decreased", "value": 5.65685424949238}
+{"event": "lease_progress", "step": 39, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "known_cells_increased", "value": 3}
+{"event": "lease_progress", "step": 39, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "new_graph_node", "value": "(-40.0, -48.0)"}
+{"event": "lease_progress", "step": 39, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "graph_distance_decreased", "value": 7.2874176605067795}
+{"event": "lease_progress", "step": 40, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "known_cells_increased", "value": 671}
+{"event": "lease_progress", "step": 40, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "new_graph_node", "value": "(-20.0, 16.0)"}
+{"event": "lease_progress", "step": 40, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "known_cells_increased", "value": 250}
+{"event": "lease_progress", "step": 40, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "new_graph_node", "value": "(-48.0, -40.0)"}
+{"event": "lease_released", "step": 40, "robot_id": 0, "region_id": "region_30_45_28_44_31_47", "reason": "completed"}
+{"event": "lease_assigned", "step": 40, "robot_id": 0, "region_id": "region_40_51_34_47_43_54", "frontier_count": 62, "target_world": [-1.600000023841858, 22.399999618530273], "generation": 9}
+{"event": "lease_progress", "step": 40, "robot_id": 0, "region_id": "region_40_51_34_47_43_54", "reason": "graph_distance_decreased", "value": null}
+{"event": "lease_progress", "step": 40, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "graph_distance_decreased", "value": 7.313708498984759}
+{"event": "lease_progress", "step": 41, "robot_id": 0, "region_id": "region_40_51_34_47_43_54", "reason": "known_cells_increased", "value": 1188}
+{"event": "lease_progress", "step": 41, "robot_id": 0, "region_id": "region_40_51_34_47_43_54", "reason": "new_graph_node", "value": "(-12.0, 20.0)"}
+{"event": "lease_progress", "step": 41, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "known_cells_increased", "value": 537}
+{"event": "lease_progress", "step": 41, "robot_id": 1, "region_id": "region_10_18_8_16_12_20", "reason": "new_graph_node", "value": "(-52.0, -32.0)"}
