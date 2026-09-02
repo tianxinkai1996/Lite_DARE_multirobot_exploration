@@ -1,133 +1,110 @@
-<h1 align="center"> DARE </h1>
+# LiteDARE Based Multi-Robot Collaborative Exploration under Local and Low Bandwidth Communication
 
-<div align="center">
-
-
-<img src="assets/dare_main.gif" width="50%"/>
-
-</div>
-
----
-
-## Introduction
+# This project is based on DARE
+# GitHub
 
 
-<div align="center">
-<img src="assets/workflow.png" width="125%"/>
-</div>
 
----
+## 1. Dataset Preparation
 
-## Usage
-### Requirements
-Install the following dependencies in a conda environment as shown below:
-```bash
-git clone https://github.com/marmotlab/DARE.git && cd DARE
-conda create -n env_dare python=3.12.9 -y
-conda activate env_dare
-pip install -e .
-```
+Must edit `dataset_parameter.py` to set parameters for separate Train and test sets, then run:
 
-
-### Dataset Collection
-Modify `dataset_parameter.py` to fit your dataset needs then run dataset collection script:
 ```bash
 python dataset_driver.py
 ```
 
-Dataset will be saved to directory `diffusion_exploration/dataset/name_of_test`.
-It will include a `data.zarr` directory which contains the dataset and a `gifs` directory.
+- Datasets are stored as Zarr under `dataset/{method}_{type}_{train|test}_{count}`.
+---
 
-### Policy Training
-Copy desired training config file from `diffusion_exploration/diffusion_policy/config`.
-Modify desired task config file from `diffusion_exploration/diffusion_policy/config/task`.
+## 2. Model Training
 
-**Note:** You probably should modify the `zarr_path` to change dataset location
+### 2.1 Original DARE (L6 reference)
 
-You can run the training script which requires two arguements:
-1. `--config-dir` which is the directory to find the config file
-2. `--config-name` which is the name of the config file
 
 ```bash
-python train.py --config-dir=. --config-name=train_exploration_transformer_node_discrete.yaml
+
+# Controlled comparison in the thesis uses batch=32; adjust via Hydra override
+python train.py --config-name=train_exploration_transformer_node_discrete.yaml \
+    dataloader.batch_size=32 val_dataloader.batch_size=16
 ```
 
-This will create a directory `diffusion_exploration/data/date/time/name_of_run`
+Run directories are written to `runs/{date}/{time}_{name}_{task}/`. Checkpoints are saved as
+`epoch={epoch:04d}-val_loss={val_loss:.3f}.ckpt` and selected by **minimum validation loss**
 
-### Evaluation
-Modify `test_parameter.py` to fit your test needs then run evaluation script:
+
+### 2.2 LiteDARE (L4 / L2, retrained from scratch)
+
+```bash
+# LiteDARE-L4 (4 graph self-attention layers)
+python lite_dare/train_lite_dare.py --encoder-layers 4 --seed 42 --epochs 200 \
+    --train-batch-size 32 --val-batch-size 16 --num-workers 0
+
+# LiteDARE-L2 (2 graph self-attention layers)
+python lite_dare/train_lite_dare.py --encoder-layers 2 --seed 42 --epochs 200 \
+    --train-batch-size 32 --val-batch-size 16 --num-workers 0
+
+```
+
+The script automatically:
+1. Swaps the graph encoder for `LiteExplorationNodeEncoder`, keeping the decoder / diffusion Transformer unchanged;
+2. Forces `resume=False` (clean retraining from scratch);
+3. Writes to `lite_dare/runs/{architecture}/seed_{seed}_{timestamp}/`.
+
+Alternatively, `python lite_dare/run_lite_ablation.py` trains L4 and L2 in sequence (check its argument conventions first).
+
+---
+
+## 3. Model Testing
+
+### 3.1 Single-robot testing
+
+First edit `test_parameter.py`:
+- `run_path`: set lite dare checkpoint paths
+- `NUM_TEST` (default 100), `USE_GPU`, `NUM_META_AGENT`, `SAVE_GIFS`
+
 ```bash
 python test_driver.py
 ```
 
-Test results will be printed on terminal and saved as a CSV
-`inference_gifs` directory will be created in `diffusion_exploration/data/date/time/name_of_run`.
+### 3.2 Multi-robot testing
+
+```bash
+# All 100 test maps, teams 2/4/6/8, compressed communication, coordination enabled
+python multi_test_driver.py --maps all --map-count 100 \
+    --team-sizes 2,4,6,8 --modes compressed --profile coordinated
+
+# Only map 3
+python multi_test_driver.py --maps 3 --team-sizes 2,4,6,8
+
+# Original DARE comparison (disables all added communication/collision/deadlock wrappers)
+python multi_test_driver.py --maps all --map-count 100 --profile original_dare
+```
+
+- Results CSV is written to `{run_path}/multi_robot_outputs/run_{timestamp}_.../results.csv`
+- Communication modes: `none` (no map transmitted), `raw` (full snapshot at every contact), `compressed` (per-peer incremental delta).
 
 ---
 
-## Credit
-If you find this work useful, please consider citing us and the following works:
+## 4. Reproducing the Chapter 4 Experiments (recommended)
 
-+ DARE: Diffusion Policy for Autonomous Robot Exploration
 
-```bibtex
-@inproceedings{cao2025dare,
-  author={Cao, Yuhong and Lew, Jeric and Liang, Jingsong and Cheng, Jin and Sartoretti, Guillaume},
-  booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)}, 
-  title={DARE: Diffusion Policy for Autonomous Robot Exploration}, 
-  year={2025},
-  pages={11987-11993},
-  doi={10.1109/ICRA55743.2025.11128196}}
-}
+```bash
+# Stage 1: compare single-robot behaviour of DARE-L6 / LiteDARE-L4 / LiteDARE-L2 and auto-select the downstream model
+python paper_experiments/run_chapter4.py --stage compare
+
+# Stage 2: run multi-robot ablation + communication comparison with the selected LiteDARE checkpoint
+python paper_experiments/run_chapter4.py --stage downstream
+
+# Run both stages in one go
+python paper_experiments/run_chapter4.py --stage all
 ```
 
-+ ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration
+Edit `paper_experiments/chapter4_config.py` before testing
+- The three checkpoint paths `DARE_L6_CHECKPOINT` / `LITE_L4_CHECKPOINT` / `LITE_L2_CHECKPOINT` (set before run);
+- `RANDOM_SEED=42`, `MAPS`, `MAP_COUNT`, `RUNS_PER_MAP`, `TEAM_SIZES`;
+- Selection margins `DELTA_SUCCESS_RATE=0.02`, `DELTA_FINAL_COVERAGE=0.01`, `DELTA_COVERAGE_AUC=0.02`;
+- `BOOTSTRAP_SAMPLES=5000`, `SELECTION_TIE_TOLERANCE=0.05`.
 
-```bibtex
-@inproceedings{cao2023ariadne,
-  author={Cao, Yuhong and Hou, Tianxiang and Wang, Yizhuo and Yi, Xian and Sartoretti, Guillaume},
-  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)}, 
-  title={ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration}, 
-  year={2023},
-  pages={10219-10225},
-  doi={10.1109/ICRA48891.2023.10160565}
-  }
-```
-
-+ Deep Reinforcement Learning-based Large-scale Robot Exploration
-
-```bibtex
-@article{cao2024deepreinforcementlearningbasedlargescale,
-  author={Cao, Yuhong and Zhao, Rui and Wang, Yizhuo and Xiang, Bairan and Sartoretti, Guillaume},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={Deep Reinforcement Learning-Based Large-Scale Robot Exploration}, 
-  year={2024},
-  volume={9},
-  number={5},
-  pages={4631-4638},
-  keywords={Training;Planning;Predictive models;Simultaneous localization and mapping;Trajectory;Three-dimensional displays;Reinforcement learning;Path planning;Robot learning;View Planning for SLAM;reinforcement learning;motion and path planning},
-  doi={10.1109/LRA.2024.3379804}
-}
-```
-
-+ Diffusion policy: Visuomotor policy learning via action diffusion
-
-```bibtex
-@inproceedings{chi2023diffusionpolicy,
-	title={Diffusion Policy: Visuomotor Policy Learning via Action Diffusion},
-	author={Chi, Cheng and Feng, Siyuan and Du, Yilun and Xu, Zhenjia and Cousineau, Eric and Burchfiel, Benjamin and Song, Shuran},
-	booktitle={Proceedings of Robotics: Science and Systems (RSS)},
-	year={2023}
-}
-
-@article{chi2024diffusionpolicy,
-	author = {Cheng Chi and Zhenjia Xu and Siyuan Feng and Eric Cousineau and Yilun Du and Benjamin Burchfiel and Russ Tedrake and Shuran Song},
-	title ={Diffusion Policy: Visuomotor Policy Learning via Action Diffusion},
-	journal = {The International Journal of Robotics Research},
-	year = {2024},
-}
-```
-
-We build on the codebase from [Deep Reinforcement Learning-based Large-scale Robot Exploration](https://github.com/marmotlab/large-scale-DRL-exploration) and [Diffusion policy](https://github.com/real-stanford/diffusion_policy).
+We build on the codebase from [DARE](https://github.com/marmotlab/DARE/tree/main).
 
 ---
