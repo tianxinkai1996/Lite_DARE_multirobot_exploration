@@ -1,1 +1,0 @@
-"""MergingMap experiment package."""
